@@ -26,12 +26,15 @@
         }
 
         h1 {
-            font-size: 42px;
-            font-weight: bold;
-            background: linear-gradient(90deg, #9d005d, #ff5c8f);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #9d005d, #ff5c8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Untuk kompatibilitas lebih baik */
+    display: inline-block; /* Mencegah efek tidak muncul */
+}
+
 
         p {
             font-size: 18px;
